@@ -1,7 +1,7 @@
 /**
  * ノートタイトル入力エリア。値のローカル状態を持ちつつ、変更を親へ通知します。
  */
-import { Note } from "@/modules/notes/note";
+import { Note } from "@/modules/notes/note.entity";
 import { useState } from "react";
 import TextAreaAutoSize from "react-textarea-autosize";
 

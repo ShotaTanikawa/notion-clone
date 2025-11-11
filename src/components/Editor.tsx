@@ -2,7 +2,7 @@
  * BlockNote を使ったリッチテキストエディタコンポーネント。
  * 初期データの設定と変更通知を受け持ちます。
  */
-import { ja } from "@blocknote/core/locales";
+import { locales } from "@blocknote/core";
 import { useCreateBlockNote } from "@blocknote/react";
 import "@blocknote/mantine/style.css";
 import { BlockNoteView } from "@blocknote/mantine";
@@ -13,6 +13,7 @@ interface EditorProps {
 }
 
 function Editor({ onChange, initialContent }: EditorProps) {
+    const { ja } = locales;
     const editor = useCreateBlockNote({
         dictionary: ja,
         initialContent:
